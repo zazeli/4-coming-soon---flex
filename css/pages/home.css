@@ -1,0 +1,218 @@
+/* base */
+@import "../base/reset.css";
+@import "../base/variables.css";
+@import "../base/layout.css";
+
+/* 3rd-party */
+
+@import "../components/font-awesome.min.css";
+
+/* components */
+@import "../components/button.css";
+@import "../components/clock.css";
+@import "../components/form.css";
+@import "../components/mouse.css";
+@import "../components/progress-bar.css";
+
+/* CUSTOM STYLES BELOW THIS COMMENT; FOR THIS PAGE */
+
+/* HERO:start */
+.hero {
+  padding-bottom: 30px;
+  background-image: url(../../img/coomingsoon.jpg);
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero > .row-short {
+  text-align: center;
+}
+
+.hero .logo {
+  margin-bottom: 45px;
+  height: 40px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.hero .main-title {
+  font-size: 37px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.hero .main-description {
+  margin-bottom: 30px;
+  font-size: 17px;
+  color: gray;
+}
+
+.hero .clock {
+  margin-bottom: 45px;
+}
+
+.hero .form {
+  width: 90%;
+  margin: 0 5% 30px;
+}
+
+.hero .form > .input {
+  color: #fff;
+  border-color: currentColor;
+}
+
+.hero .form > .input::placeholder {
+  color: #fff;
+  border-color: currentColor;
+}
+
+/* HERO:end */
+
+/* MAIN CONTENT:start */
+.column > * {
+  margin-bottom: 20px;
+}
+
+.column > *:last-child {
+  margin-bottom: 0;
+}
+
+.content-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 1em;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.content-description {
+  font-size: 15px;
+  color: #999;
+}
+
+.content-description > .link {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+main .form > button {
+  float: right;
+}
+
+@media (min-width: 900px) {
+  main .form > input.input {
+    width: calc(50% - 10px);
+  }
+
+  main .form > input.input:last-of-type {
+    float: right;
+  }
+}
+
+/* MAIN CONTENT:end */
+
+/* FOOTER:start */
+
+footer.container {
+    padding-top: 0;
+    font-size: 17px;
+    text-align: center;
+    color: #fff8;
+}
+
+.socials {
+    padding: 20px 0;
+    border-bottom: 2px solid whitesmoke;
+    position: relative;
+}
+.socials > .social {
+
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all 1s;
+}
+.socials > .social:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+footer .logo {
+    height: 40px;
+    width: 100%;
+    margin: 50px 0;
+    object-fit: contain;
+    margin-top: 40px;
+}
+
+footer .trio > p {
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
+}
+
+footer .trio > p::before {
+  content: '';
+  width: 1px;
+  height: 70%;
+  display: inline-block;
+  background-color: #fff8;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+
+}
+
+footer .trio > p:first-child::before {
+ display: none;
+
+}
+
+
+.dollar::before{
+  content: '$';
+}
+
+.dollar::after{
+  content: '😜';
+}
+
+footer .link {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 700px) {
+  footer .trio > p {
+    width: 100%;
+  }
+  footer .trio > p::before {
+    display: none;
+  }
+}
+
+/* FOOTER:end */
+
+.back-to-top {
+
+  /* position: fixed;
+  bottom: 40px;
+  right: 40px; */
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 700px) {
+  .back-to-top {
+    display: none;
+  }
+}

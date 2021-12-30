@@ -1,0 +1,41 @@
+.form {
+    display: inline-block;
+    width: 100%;
+}
+
+.form > * {
+    margin-bottom: 20px;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form > label {
+    display: none;
+}
+
+.form > .input {
+    width: 100%;
+    padding: 0.5em 0;
+    float: left;
+    font-size: 15px;
+    line-height: 1.5em;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px #ccc;
+    border-radius: 0.2em;
+}
+
+.form > .texterea {
+    width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    height: 120px;
+    resize: vertical;
+
+}
+
+.form *:focus {
+    outline: 1px solid var(--secondary-color);
+}
